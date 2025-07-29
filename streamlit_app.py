@@ -26,10 +26,6 @@ def calculate_required_nightly_rate(take_home, mgmt_fee, guest_clean_fee, client
     except Exception as e:
         return None, str(e)
 
-# --- UI Layout ---
-st.title("📊 Average Nightly Rate Calculator")
-st.markdown("Estimate the nightly rate needed to meet your target income, based on occupancy and fees.")
-
 # --- Section 3: Live What-If Calculator with Sliders ---
 st.header("🎛️ What-If: Interactive Nightly Rate Estimator")
 st.markdown("Adjust the sliders and inputs below to instantly see the nightly rate required to reach your goal.")
